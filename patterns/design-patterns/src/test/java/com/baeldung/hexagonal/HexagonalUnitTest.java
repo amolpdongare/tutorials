@@ -12,7 +12,7 @@ import com.baeldung.hexagonal.adaptors.LoggingOperation;
 import com.baeldung.hexagonal.core.Customer;
 import com.baeldung.hexagonal.core.CustomerCore;
 
-public class HexagonalTest{
+public class HexagonalUnitTest{
     @Test
     public void AppTest(){
         CustomerCore cusCore =new CustomerCore(new EmailNotificationService(),new DatabaseOperation(),new LoggingOperation(),new CustomerInfoService());
